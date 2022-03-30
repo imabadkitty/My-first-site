@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Edward's Coffee</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navi-wrapper">
+        <div class="left-side">
+          <div class="home-button">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="home-button">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="my-name">
+            <div>EDUARD ANDREI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="portofolio-items-wrapper">
+        <div class="portofolio-item-wrapper">
+          <div
+            class="portofolio-img-background"
+            style="background-image: url(images/1.jpg)"
+          ></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio animi ea fugit nisi dolores sint itaque velit nulla neque adipisci!</div>
+          </div>
+        </div>
+        <div class="portofolio-item-wrapper">
+          <div
+            class="portofolio-img-background"
+            style="background-image: url(images/2.jpg)"
+          ></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptatem sapiente ut culpa. Minus doloremque soluta optio suscipit, atque consectetur!</div>
+          </div>
+        </div>
+        <div class="portofolio-item-wrapper">
+          <div
+            class="portofolio-img-background"
+            style="background-image: url(images/3.jpg)"
+          ></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione, ea esse necessitatibus qui molestiae vitae tempore nihil iste exercitationem.</div>
+          </div>
+        </div>
+        <div class="portofolio-item-wrapper">
+          <div
+            class="portofolio-img-background"
+            style="background-image: url(images/4.jpg)"
+          ></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquam tempore doloribus enim, ducimus hic ut facere odio. Sunt, laudantium!</div>
+          </div>
+        </div>
+        <div class="portofolio-item-wrapper">
+          <div
+            class="portofolio-img-background"
+            style="background-image: url(images/5.jpg)"
+          ></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellat soluta nisi, dolore ullam illum velit ipsam odit culpa iste?</div>
+          </div>
+        </div>
+        <div class="portofolio-item-wrapper">
+          <div
+            class="portofolio-img-background"
+            style="background-image: url(images/6.jpg)"
+          ></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sunt dolore iure odio culpa, excepturi sint harum consequuntur perferendis id?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("image-blur");
+      });
+
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("image-blur");
+      });
+    });
+  </script>
+  
+</html>

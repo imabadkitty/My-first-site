@@ -1,0 +1,117 @@
+body {
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* Nav Styles */
+
+.navi-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.navi-wrapper > .left-side > div {
+  display: flex;
+  margin-right: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.my-name {
+  background: url(https://media0.giphy.com/media/3ov9k4ylxDw8hrF0fm/giphy.gif?cid=ecf05e473yzlopuh7a7jy2t1s3b34dj8xsdgcvdxepfofolz&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: transparent;
+  -webkit-background-clip: text;
+  flex-shrink: 0;
+  font-family: Inspiration;
+}
+
+.home-button {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  color: black;
+}
+
+.home-button a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.home-button:hover {
+  border-bottom: 1px solid black;
+}
+.home-button a:hover {
+  color: black;
+}
+
+/* Img Styles */
+
+.portofolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid gainsboro;
+}
+
+.portofolio-item-wrapper {
+  position: relative;
+  margin: 5px 5px;
+}
+
+.portofolio-img-background {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+  position: absolute;
+}
+
+.portofolio-item-wrapper:hover .portofolio-img-background {
+  transition: 1s;
+  filter: brightness(10%)
+}
+
+.portofolio-item-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: seagreen;
+  font-size: 1.2em;
+  
+}
